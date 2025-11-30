@@ -74,36 +74,46 @@
 
     "team": {
         "staffAdvisor": {
-            "name": "Enric S Neelamkavil",
-            "image": "https://dataset-eight.vercel.app/member1.svg"
+            "name": "Nisha",
+            "image": "https://dataset-eight.vercel.app/member11.svg"
         },
         "campusLead": {
-            "name": "Elon Musk",
-            "image": "https://th.bing.com/th/id/OIP.DjyPSeO-t7bK2agoLSYJzgHaHa?pid=ImgDet&rs=1"
+            "name": "Abhinav V R",
+            "image": "https://dataset-eight.vercel.app/member12.svg"
         },
         "campusCoLead": {
-            "name": "Enric S Neelamkavil",
-            "image": "https://mulearn-cce.vercel.app/static/media/img1.31943833473f0d0a748b.png"
+            "name": "Niya Santhosh",
+            "image": "https://dataset-eight.vercel.app/member3.svg"
         },
         "treasurer": {
-            "name": "Enric S Neelamkavil",
-            "image": "https://mulearn-cce.vercel.app/static/media/img1.31943833473f0d0a748b.png"
+            "name": "Riya Rose Roy",
+            "image": "https://dataset-eight.vercel.app/member4.svg"
         },
         "technicalLead": {
-            "name": "Enric S Neelamkavil",
-            "image": "https://mulearn-cce.vercel.app/static/media/img1.31943833473f0d0a748b.png"
+            "name": "Arjun K",
+            "image": "https://dataset-eight.vercel.app/member1.svg"
         },
         "mediaLead": {
-            "name": "Enric S Neelamkavil",
-            "image": "https://mulearn-cce.vercel.app/static/media/img1.31943833473f0d0a748b.png"
+            "name": "Sanjay L S",
+            "image": "https://dataset-eight.vercel.app/member5.svg"
         },
         "contentLead": {
-            "name": "Enric S Neelamkavil",
-            "image": "https://mulearn-cce.vercel.app/static/media/img1.31943833473f0d0a748b.png"
+            "name": "Ardra A R",
+            "image": "https://dataset-eight.vercel.app/member2.svg"
         },
         "operationLead": {
-            "name": "Enric S Neelamkavil",
-            "image": "https://mulearn-cce.vercel.app/static/media/img1.31943833473f0d0a748b.png"
+            "name": "Favas M",
+            "image": "https://dataset-eight.vercel.app/member6.svg"
+        },
+        "member9": {
+            "name": "John Doe",
+            "image": "https://dataset-eight.vercel.app/member7.svg",
+            "role": "Event Coordinator"
+        },
+        "member10": {
+            "name": "Jane Smith",
+            "image": "https://dataset-eight.vercel.app/member8.svg",
+            "role": "Outreach Lead"
         }
     },
 

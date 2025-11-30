@@ -126,7 +126,7 @@ const Team = () => {
                                 {data.team.treasurer.name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Treasurer
+                                Creative Lead
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ const Team = () => {
                                 {data.team.contentLead.name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Content Lead
+                                Design Lead
                             </div>
                         </div>
                     </div>
@@ -206,10 +206,30 @@ const Team = () => {
                                 {data.team.operationLead.name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Operation Lead
+                                Content Lead
                             </div>
                         </div>
-                    </div>
+                    </div>    
+                    <div 
+                        ref={(el) => addToRefs(el, 8)}
+                        className={`${styles.team} ${styles.team9}`}
+                    >
+                        <div className={styles.team1Img}>
+                            <img
+                                className={styles.teamImageIndividual}
+                                src={data.team.operationLead.image}
+                                loading="lazy"
+                            />
+                        </div>
+                        <div className={styles.teamNameDesignation}>
+                            <div className={styles.teamMemberName}>
+                                {data.team.operationLead.name}
+                            </div>
+                            <div className={styles.teamMemberDesignation}>
+                                Content Lead
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </div>
