@@ -48,7 +48,7 @@ const Footer = () => {
             <div className={styles.line}></div>
             <div className={styles.ptag}>
                 {" "}
-                <p>Copyright © 2023. All Rights Reserved.</p>
+                <p>Copyright © 2025. All Rights Reserved.</p>
                 <p>µLearn Foundation.</p>
             </div>
         </div>
