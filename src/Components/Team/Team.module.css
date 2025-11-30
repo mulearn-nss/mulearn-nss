@@ -13,7 +13,7 @@
     color: #ad58ff;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
+    animation: fadeInUp 0.5s ease-out forwards;
 }
 
 @keyframes fadeInUp {
@@ -30,9 +30,22 @@
 @keyframes float {
     0%, 100% {
         transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     50% {
-        transform: translateY(-8px);
+        transform: translateY(-6px);
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@keyframes floatDown {
+    0%, 100% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    50% {
+        transform: translateY(6px);
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -102,7 +115,7 @@
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    animation: fadeInUp 0.8s ease-out forwards, float 6s ease-in-out infinite;
+    animation: fadeInUp 0.5s ease-out forwards, float 6s ease-in-out infinite;
 }
 
 .team::before {
@@ -116,7 +129,7 @@
     background: linear-gradient(45deg, rgba(173, 88, 255, 0.1), rgba(255, 255, 255, 0.1), rgba(173, 88, 255, 0.1));
     background-size: 200% 200%;
     z-index: -1;
-    animation: gradientPulse 8s ease infinite;
+    animation: gradientPulse 5s ease infinite;
     opacity: 0.7;
     filter: blur(10px);
 }
@@ -149,7 +162,7 @@
     border-radius: 50%;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     border: 3px solid rgba(173, 88, 255, 0.1);
-    animation: pulse 4s ease-in-out infinite;
+    animation: pulse 2.5s ease-in-out infinite;
     transform-origin: center;
     background: #fff;
     z-index: 2;
@@ -203,56 +216,56 @@
     margin-top: -30px;
     top: 0;
     left: 5%;
-    animation-delay: 0.1s;
+    animation: fadeInUp 0.5s ease-out 0.1s forwards, float 6s ease-in-out infinite 0.1s;
 }
 
 .team2 {
     margin-top: -50px;
     top: 0;
     left: 28%;
-    animation-delay: 0.2s;
+    animation: fadeInUp 0.5s ease-out 0.2s forwards, floatDown 6s ease-in-out infinite 0.2s;
 }
 
 .team3 {
     margin-top: -60px;
     top: 0;
     left: 50%;
-    animation-delay: 0.3s;
+    animation: fadeInUp 0.5s ease-out 0.3s forwards, floatDown 6s ease-in-out infinite 0.3s;
 }
 
 .team4 {
     margin-top: -10px;
     top: 0;
     left: 74%;
-    animation-delay: 0.4s;
+    animation: fadeInUp 0.5s ease-out 0.4s forwards, float 6s ease-in-out infinite 0.4s;
 }
 
 .team5 {
     margin-top: 350px;
     top: 100%;
     left: 7%;
-    animation-delay: 0.5s;
+    animation: fadeInUp 0.5s ease-out 0.5s forwards, float 6s ease-in-out infinite 0.5s;
 }
 
 .team6 {
     margin-top: 400px;
     top: 100%;
     left: 30%;
-    animation-delay: 0.6s;
+    animation: fadeInUp 0.5s ease-out 0.6s forwards, floatDown 6s ease-in-out infinite 0.6s;
 }
 
 .team7 {
     margin-top: 430px;
     top: 100%;
     left: 54%;
-    animation-delay: 0.7s;
+    animation: fadeInUp 0.5s ease-out 0.7s forwards, floatDown 6s ease-in-out infinite 0.7s;
 }
 
 .team8 {
     margin-top: 360px;
     top: 100%;
     left: 77%;
-    animation-delay: 0.8s;
+    animation: fadeInUp 0.5s ease-out 0.8s forwards, float 6s ease-in-out infinite 0.8s;
 }
 
 @media screen and (max-width: 1650px) {

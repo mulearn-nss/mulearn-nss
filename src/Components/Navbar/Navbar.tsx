@@ -40,19 +40,15 @@ const Navbar = () => {
             <div className={styles.navbarRight}>
                 <div>
                     {navContent.map((content, i) => (
-                        <a href={`#${content}`} key={i.toString() + content}>
-                            <p
-                                style={{
-                                    borderBottom: window.location.href.includes(
-                                        `#${content}`
-                                    )
-                                        ? "4px solid #B3B3FF"
-                                        : "",
-                                    height: "18px",
-                                    fontSize: "18px",
-                                    fontWeight: 600,
-                                }}
-                            >
+                        <a 
+                          href={`#${content}`} 
+                          key={i.toString() + content}
+                          className={window.location.href.includes(`#${content}`) ? styles.active : ''}
+                        >
+                            <p style={{
+                                fontSize: "18px",
+                                fontWeight: 600,
+                            }}>
                                 {content}
                             </p>
                         </a>
@@ -73,20 +69,10 @@ const Navbar = () => {
                             <a
                                 href={`#${content}`}
                                 key={i.toString() + content}
+                                className={window.location.href.includes(`#${content}`) ? styles.active : ''}
+                                onClick={() => setopenmenu(false)}
                             >
-                                <p
-                                    style={{
-                                        borderBottom:
-                                            window.location.href.includes(
-                                                `#${content}`
-                                            )
-                                                ? "4px solid #B3B3FF"
-                                                : "",
-                                        height: "18px",
-                                    }}
-                                >
-                                    {content}
-                                </p>
+                                <p>{content}</p>
                             </a>
                         ))}
                         <button>

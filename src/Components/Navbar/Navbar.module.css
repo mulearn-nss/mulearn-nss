@@ -56,8 +56,38 @@
   justify-content: center;
 }
 
+.navbarRight>div>a {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
 .navbarRight>div>a>p {
   text-transform: capitalize;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbarRight>div>a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #6f6fff;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  border-radius: 2px;
+}
+
+.navbarRight>div>a:hover::after,
+.navbarRight>div>a.active::after {
+  width: 100%;
+}
+
+.navbarRight>div>a.active > p,
+.navbarRight>div>a:hover > p {
+  color: #6f6fff;
 }
 
 .navbarRight {
@@ -102,11 +132,44 @@
   padding: 10px;
 }
 
+.navbarMobile>div>a {
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+}
+
 .navbarMobile>div>a>p {
   color: white;
   font-size: 20px;
   font-weight: 400;
   text-transform: capitalize;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbarMobile>div>a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6f6fff;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  border-radius: 1px;
+}
+
+.navbarMobile>div>a:hover::after,
+.navbarMobile>div>a.active::after {
+  width: 80%;
+}
+
+.navbarMobile>div>a.active > p,
+.navbarMobile>div>a:hover > p {
+  color: #6f6fff;
 }
 
 .navbarMobile>div>button>a {
