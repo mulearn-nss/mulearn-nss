@@ -249,7 +249,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
-  text-transform: uppercase;
   letter-spacing: 1px;
   width: 100%;
   max-width: 280px;
@@ -297,6 +296,7 @@
 
   .hamburger {
     display: block;
+    
   }
 
   .navbarMobile {
@@ -331,7 +331,7 @@ body.menu-open {
   }
 
   .navbarLeft {
-    padding: 5px 0 0 0;
+    padding: 5px 0 0 5px !important;
   }
 
   .navbarLeft > a > p {
@@ -342,6 +342,7 @@ body.menu-open {
   /* Add smooth transition for menu open/close */
   .hamburger {
     transition: transform 0.3s ease, color 0.3s ease;
+    margin-right: -15px;
   }
 
   .hamburger[aria-expanded="true"] {
@@ -369,4 +370,5 @@ body.menu-open {
   .navbarLeft {
     padding: 10px 25px 0px;
   }
+  
 }

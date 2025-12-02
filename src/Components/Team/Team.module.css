@@ -73,7 +73,7 @@
     gap: 280px;
     transform: translateY(30px);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    animation: float 6s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
 }
 
 .teamBgLineWrapper>img {
@@ -108,7 +108,7 @@
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    animation: fadeInUp 0.8s ease-out forwards, float 6s ease-in-out infinite;
+    animation: fadeInUp 0.8s ease-out forwards, float 5s ease-in-out infinite;
 }
 
 .team::before {

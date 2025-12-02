@@ -6,60 +6,77 @@
     "about": "µLearn NSS College of Engineering Palakkad (NSSCE) was established on [Date] with the vision of cultivating a collaborative, tech-driven learning ecosystem powered by micro peer groups. The chapter encourages students to step beyond conventional approaches and engage in innovative, engineering-focused problem-solving. Under the leadership of Abhinav VR (Campus Lead) and Nisha, Assistant Professor – Civil (Faculty Enabler), µLearn NSSCE continues to foster a culture of exploration, creativity, and technical growth. In September 2025, the chapter formed its Executive Committee (Execom), uniting dedicated student leaders to advance its mission. Today, µLearn NSSCE stands as a vibrant technical community driven by collaboration, innovation, and continuous learning.",
     "events": [
         {
-            "month": "Sep",
-            "date": "29",
-            "head": "Event 1",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
-        },
-        {
-            "month": "Sep",
-            "date": "27",
-            "head": "Opportunities in TCS EIS",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
-        },
-        {
-            "month": "Sep",
-            "date": "26",
-            "head": "Opportunities in TCS EIS",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
-        },
-        {
-            "month": "Sep",
-            "date": "25",
-            "head": "Opportunities in TCS EIS",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
-        },
-        {
-            "month": "Sep",
-            "date": "25",
-            "head": "Opportunities in TCS EIS",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
+            "month": "Oct",
+            "date": "3",
+            "head": "UI Frame: Mastering User Interfaces",
+            "para": "A hands-on beginner-friendly UI/UX design session in Figma to turn ideas into stunning posters and intuitive interfaces.",
+            "img": "https://dataset-eight.vercel.app/e1.jpg"
         }
     ],
 
     "gallery": {
         "row1": [
             {
-                "image": "https://mulearn.org/assets/home/illustration.webp"
+                "image": "https://dataset-eight.vercel.app/execom.webp"
             },
             {
-                "image": "https://mulearn.org/assets/home/Chart.webp"
+                "image": "https://dataset-eight.vercel.app/campusEnabler.png"
             },
 			{
-				"image": "https://learn.mulearn.org/assets/challenge/typingsample.webp"
+				"image": "https://dataset-eight.vercel.app/campusLead.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/colead.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/creative.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/tech.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/media.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/design.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/content.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/igai.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/igiot.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/igspace.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/iguiux.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/techTeam.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/mediaTeam.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/designTeam.png"
+			},
+			{
+				"image": "https://dataset-eight.vercel.app/contentTeam.png"
 			}
         ],
         "row2": [
             {
-                "image": "https://th.bing.com/th/id/OIP.p5zC9uLm5ByGSy8gYI0McAHaE8?pid=ImgDet&rs=1"
+                "image": "https://dataset-eight.vercel.app/memr2.jpg"
             },
             {
-                "image": "https://images.squarespace-cdn.com/content/v1/5c710438b914490d5769a64f/b4fb2b4f-5f95-41a1-9416-d156d0ae273f/Most+Famous+Astrologer+in+the+World.jpg"
+                "image": "https://dataset-eight.vercel.app/memr3.jpg"
+            },
+            {
+                "image": "https://dataset-eight.vercel.app/memr4.jpg"
             }
         ]
     },
