@@ -2,7 +2,8 @@ import styles from "./Navbar.module.css";
 import { useEffect, useState } from "react";
 import { ULearn } from "../../assets/svg/svg";
 import { useReactPath } from "./path.hook.ts";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { motion, AnimatePresence } from "framer-motion";
 import data from "../../../data.json";
 
 const Navbar = () => {
@@ -60,26 +61,55 @@ const Navbar = () => {
             </div>
             
             <div className={styles.navbarMobile}>
-                <button onClick={openMenu} className={styles.hamburger}>
-                    <AiOutlineMenu />
+                <button 
+                    onClick={openMenu} 
+                    className={styles.hamburger}
+                    aria-label={openmenu ? 'Close menu' : 'Open menu'}
+                >
+                    {openmenu ? <AiOutlineClose /> : <AiOutlineMenu />}
                 </button>
-                {openmenu && (
-                    <div>
-                        {navContent.map((content, i) => (
-                            <a
-                                href={`#${content}`}
-                                key={i.toString() + content}
-                                className={window.location.href.includes(`#${content}`) ? styles.active : ''}
+                <AnimatePresence>
+                    {openmenu && (
+                        <motion.div 
+                            className={styles.mobileMenu}
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <button 
                                 onClick={() => setopenmenu(false)}
+                                className={styles.closeButton}
+                                aria-label="Close menu"
                             >
-                                <p>{content}</p>
-                            </a>
-                        ))}
-                        <button>
-                            <a href="http://app.mulearn.org">Join µlearn</a>
-                        </button>
-                    </div>
-                )}
+                                <AiOutlineClose />
+                            </button>
+                            <div className={styles.mobileMenuContent}>
+                                {navContent.map((content, i) => (
+                                    <motion.a
+                                        href={`#${content}`}
+                                        key={i.toString() + content}
+                                        className={`${styles.mobileNavLink} ${window.location.href.includes(`#${content}`) ? styles.active : ''}`}
+                                        onClick={() => setopenmenu(false)}
+                                        initial={{ x: -20, opacity: 0 }}
+                                        animate={{ x: 0, opacity: 1 }}
+                                        transition={{ delay: i * 0.1 }}
+                                    >
+                                        {content}
+                                    </motion.a>
+                                ))}
+                                <motion.button 
+                                    className={styles.mobileCta}
+                                    initial={{ y: 20, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ delay: navContent.length * 0.1 }}
+                                >
+                                    <a href="http://app.mulearn.org/register">Join µlearn</a>
+                                </motion.button>
+                            </div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
         </div>
     );
