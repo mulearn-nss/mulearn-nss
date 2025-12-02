@@ -48,6 +48,8 @@ const Team = () => {
                     <img src={line2} alt="" loading="lazy" />
                     <img src={line} alt="" loading="lazy" />
                     <img src={line2} alt="" loading="lazy" />
+                    <img src={line} alt="" loading="lazy" />
+                    <img src={line2} alt="" loading="lazy" />
                 </div>
                 <div className={styles.teamMembersDetailsWrapper}>
                     <div 
@@ -209,7 +211,7 @@ const Team = () => {
                                 {data.team.operationLead.name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Operation Lead
+                                Content Lead
                             </div>
                         </div>
                     </div>
@@ -285,7 +287,30 @@ const Team = () => {
                                 {data.team.member11.role}
                             </div>
                         </div>
-                    </div>                       
+                    </div>  
+                    <div 
+                        ref={(el) => addToRefs(el, 11)}
+                        className={`${styles.team} ${styles.team12}`}
+                    >
+                        <div className={styles.team1Img}>
+                            <img
+                                className={styles.teamImageIndividual}
+                                src={data.team.member12.image}
+                                alt={`${data.team.member11.name}, ${data.team.member12.role}`}
+                                loading="lazy"
+                                width="200"
+                                height="200"
+                            />
+                        </div>
+                        <div className={styles.teamNameDesignation}>
+                            <div className={styles.teamMemberName}>
+                                {data.team.member12.name}
+                            </div>
+                            <div className={styles.teamMemberDesignation}>
+                                {data.team.member12.role}
+                            </div>
+                        </div>
+                    </div>                     
                 </div>
             </div>
         </div>
