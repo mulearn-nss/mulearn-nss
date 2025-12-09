@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mulearn-nss.vercel.app/sitemap.xml
