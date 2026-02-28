@@ -105,7 +105,13 @@
             },
             {
                 "image": "https://dataset-eight.vercel.app/memr4.jpg"
-            }
+            },
+            {
+				"image": "https://dataset-eight.vercel.app/ui.jpeg"
+			},
+            {
+				"image": "https://dataset-eight.vercel.app/dl.jpeg"
+			}
         ]
     },
 
