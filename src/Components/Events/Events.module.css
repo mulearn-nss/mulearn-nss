@@ -11,6 +11,8 @@
 .events h2 {
   text-align: center;
   align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 
   color: #ae59ff;
   font-size: 2rem;
