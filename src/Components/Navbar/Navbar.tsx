@@ -33,7 +33,7 @@ const Navbar = () => {
             }}
         >
             <div className={styles.navbarLeft}>
-                <a href="#home">
+                <a href="/#home">
                     <ULearn/>
                     <p>{data.collegeCode}</p>
                 </a>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 <div>
                     {navContent.map((content, i) => (
                         <a 
-                          href={`#${content}`} 
+                          href={`/#${content}`} 
                           key={i.toString() + content}
                           className={window.location.href.includes(`#${content}`) ? styles.active : ''}
                         >
@@ -87,7 +87,7 @@ const Navbar = () => {
                             <div className={styles.mobileMenuContent}>
                                 {navContent.map((content, i) => (
                                     <motion.a
-                                        href={`#${content}`}
+                                        href={`/#${content}`}
                                         key={i.toString() + content}
                                         className={`${styles.mobileNavLink} ${window.location.href.includes(`#${content}`) ? styles.active : ''}`}
                                         onClick={() => setopenmenu(false)}

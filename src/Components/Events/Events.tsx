@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
 import styles from "./Events.module.css";
 import data from "../../../data.json";
 
 const Events = () => {
+  // Limit the smaller cards to 2 items (so 3 total events are displayed on the home page)
+  const displayedEvents = data.events.slice(1, 3);
+
   return (
     <div className={styles.events}>
       <h2>Our Event Journey</h2>
@@ -20,7 +24,7 @@ const Events = () => {
           <img src={data["events"][0].img} alt="" />
         </div>
         <div className={styles.subContent}>
-          {data.events.slice(1).map((event, index) => {
+          {displayedEvents.map((event, index) => {
             return (
               <div className={styles.card + " " + styles.small} key={index}>
                 <div className={styles.content}>
@@ -39,6 +43,11 @@ const Events = () => {
           })}
         </div>
       </div>
+      {data.events.length > 3 && (
+        <Link to="/events" className={styles.viewAllBtn} style={{ textDecoration: 'none', textAlign: 'center', width: 'fit-content' }}>
+          View All
+        </Link>
+      )}
     </div>
   );
 };

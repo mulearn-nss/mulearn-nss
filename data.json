@@ -6,6 +6,28 @@
     "about": "µLearn NSS College of Engineering Palakkad (NSSCE) was established on August 18, 2025 with the vision of cultivating a collaborative, tech-driven learning ecosystem powered by micro peer groups. The chapter encourages students to step beyond conventional approaches and engage in innovative, engineering-focused problem-solving. Under the leadership of Abhinav VR (Campus Lead) and Nisha, Assistant Professor – Civil (Faculty Enabler), µLearn NSSCE continues to foster a culture of exploration, creativity, and technical growth. In September 2025, the chapter formed its Executive Committee (Execom), uniting dedicated student leaders to advance its mission. Today, µLearn NSSCE stands as a vibrant technical community driven by collaboration, innovation, and continuous learning.",
     "events": [
         {
+            "month": "JUN",
+            "date": "19",
+            "head": "μComics: New IG Started",
+            "para": "μComics, a creative venture by MuLearn NSSCE, officially launched, marking a new chapter in the chapter’s journey to explore the intersection of comics and learning.",
+            "img": "https://dataset-eight.vercel.app/MUCOMICS.jpeg"
+        },
+        {
+            "month": "APR",
+            "date": "16",
+            "head": "Build with AI - Virtual Hackathon",
+            "para": "The BUILD WITH AI 2026 virtual hackathon, organized by μLearn NSSCE on 16 April 2026, provided students with an exciting opportunity to develop AI-powered solutions using Gemini and Google AI tools.",
+            "img": "https://dataset-eight.vercel.app/BUILDWITHAI.jpg"
+        },
+        {
+            "month": "APR",
+            "date": "6-15",
+            "head": "Karma Drive",
+            "para": "Karma Mining, hosted by MuLearn NSSCE, is a great opportunity for learners to actively participate and increase their karma points in the MuLearn Community.",
+            "img": "https://dataset-eight.vercel.app/KARMADRIVE.jpg"
+        },
+        
+        {
             "month": "Jan",
             "date": "29",
             "head": "Stellar IQ: A Space Bytes Quiz Competition ",
